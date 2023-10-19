@@ -9,6 +9,17 @@ package problems
 // @lc code=start
 func strStr(haystack string, needle string) int {
 	for i := 0; i < len(haystack)-len(needle)+1; i++ {
+		if haystack[i:i+len(needle)] == needle {
+			return i
+		}
+	}
+	return -1
+}
+
+// @lc code=end
+
+func StrStr_old(haystack string, needle string) int {
+	for i := 0; i < len(haystack)-len(needle)+1; i++ {
 		sub := 0
 		for j := 0; j < len(needle); j++ {
 			if needle[j] == haystack[i+j] {
@@ -22,5 +33,3 @@ func strStr(haystack string, needle string) int {
 
 	return -1
 }
-
-// @lc code=end
