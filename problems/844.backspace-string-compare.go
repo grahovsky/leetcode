@@ -19,13 +19,13 @@ func trimStringReverse(s string) string {
 	for i := len(s) - 1; i >= 0; i-- {
 		if s[i] == '#' {
 			sBack++
-			continue
+		} else {
+			if sBack == 0 {
+				buffer.WriteByte(s[i])
+			} else {
+				sBack--
+			}
 		}
-		if sBack > 0 {
-			sBack--
-			continue
-		}
-		buffer.WriteByte(s[i])
 	}
 	return buffer.String()
 }
