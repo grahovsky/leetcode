@@ -8,6 +8,20 @@ package problems
 
 // @lc code=start
 func lengthOfLastWord(s string) int {
+	count := 0
+	for i := len(s) - 1; i >= 0; i-- {
+		if s[i] != ' ' {
+			count++
+		} else if count > 0 {
+			return count
+		}
+	}
+	return count
+}
+
+// @lc code=end
+
+func LengthOfLastWord_old(s string) int {
 	space := true
 	endSpaces := 0
 
@@ -23,5 +37,3 @@ func lengthOfLastWord(s string) int {
 	}
 	return len(s) - endSpaces
 }
-
-// @lc code=end
