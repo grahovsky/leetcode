@@ -6,8 +6,6 @@
 
 package problems
 
-import "fmt"
-
 // @lc code=start
 func addBinary(a, b string) string {
 	if len(a) < len(b) {
@@ -15,7 +13,7 @@ func addBinary(a, b string) string {
 	}
 
 	iB := len(b) - 1
-	result := ""
+	result := []byte{}
 	var sum, shift byte
 
 	for iA := len(a) - 1; iA >= 0; iA-- {
@@ -33,13 +31,13 @@ func addBinary(a, b string) string {
 			shift++
 		}
 
-		result = fmt.Sprintf("%b", sum%2) + result
+		result = append([]byte{sum%2 + 48}, result...)
 	}
 
 	if shift == 0 {
-		return result
+		return string(result)
 	}
-	return "1" + result
+	return "1" + string(result)
 }
 
 // @lc code=end
