@@ -8,17 +8,12 @@ package problems
 
 // @lc code=start
 func plusOne(digits []int) []int {
-	incr := 1
 	for i := len(digits) - 1; i >= 0; i-- {
-		digits[i] += incr
-		incr--
-		if digits[i] == 10 {
-			digits[i] = 0
-			incr++
-		}
-		if incr == 0 {
+		if digits[i] < 9 {
+			digits[i]++
 			return digits
 		}
+		digits[i] = 0
 	}
 
 	return append([]int{1}, digits...)
