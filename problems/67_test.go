@@ -14,6 +14,8 @@ func Test67(t *testing.T) {
 	}{
 		{input1: "11", input2: "1", result: "100"},
 		{input1: "1010", input2: "1011", result: "10101"},
+		{input1: "1110001", input2: "110100100", result: "1000010101"},
+		{input1: "1111", input2: "1111", result: "11110"},
 	}
 	for _, tc := range tests {
 		tc := tc
