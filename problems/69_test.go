@@ -13,6 +13,7 @@ func Test69(t *testing.T) {
 	}{
 		{input1: 4, result: 2},
 		{input1: 8, result: 2},
+		{input1: 10000, result: 100},
 	}
 	for _, tc := range tests {
 		tc := tc
