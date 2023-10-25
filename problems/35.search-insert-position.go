@@ -29,7 +29,7 @@ func searchIndex(nums []int, target int, start int) int {
 
 // @lc code=end
 
-func SearchInsert_no_O_log2(nums []int, target int) int {
+func SearchInsertNoOLog2(nums []int, target int) int {
 	for i, n := range nums {
 		if target <= n {
 			return i

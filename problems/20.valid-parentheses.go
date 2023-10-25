@@ -27,8 +27,8 @@ func isValid(str string) bool {
 			return false
 		}
 
-		lastOpening := queue[len(queue)-1]
-		if lastOpening != opening {
+		lastSavedOpening := queue[len(queue)-1]
+		if lastSavedOpening != opening {
 			return false
 		}
 
