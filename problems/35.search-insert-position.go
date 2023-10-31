@@ -22,9 +22,8 @@ func searchIndex(nums []int, target int, start int) int {
 	pivot := len(nums) / 2
 	if target < nums[pivot] {
 		return searchIndex(nums[:pivot], target, start)
-	} else {
-		return searchIndex(nums[pivot:], target, start+pivot)
 	}
+	return searchIndex(nums[pivot:], target, start+pivot)
 }
 
 // @lc code=end

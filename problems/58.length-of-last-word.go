@@ -21,7 +21,7 @@ func lengthOfLastWord(s string) int {
 
 // @lc code=end
 
-func LengthOfLastWord_old(s string) int {
+func LengthOfLastWordOld(s string) int {
 	space := true
 	endSpaces := 0
 

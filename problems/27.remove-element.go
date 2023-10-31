@@ -20,7 +20,7 @@ func removeElement(nums []int, val int) int {
 	return k
 }
 
-func RemoveElement_old(nums []int, val int) int {
+func RemoveElementOld(nums []int, val int) int {
 	k := len(nums)
 	for i := 0; i < k; i++ {
 		if nums[i] == val {

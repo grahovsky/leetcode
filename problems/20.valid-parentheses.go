@@ -3,8 +3,10 @@
  *
  * [20] Valid Parentheses
  */
+
 package problems
 
+// @lc code=start
 var closing = map[byte]byte{
 	')': '(',
 	'}': '{',
@@ -33,7 +35,6 @@ func isValid(str string) bool {
 		}
 
 		queue = queue[:len(queue)-1] // "remove" lastOpening
-
 	}
 
 	return len(queue) == 0

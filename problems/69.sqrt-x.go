@@ -25,7 +25,7 @@ func mySqrt(x int) int {
 
 // @lc code=end
 
-func MySqrt_old(x int) int {
+func MySqrtOld(x int) int {
 	for i := 1; true; i++ {
 		if i*i > x {
 			return i - 1

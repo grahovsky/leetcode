@@ -18,7 +18,7 @@ func strStr(haystack string, needle string) int {
 
 // @lc code=end
 
-func StrStr_old(haystack string, needle string) int {
+func StrStrOld(haystack string, needle string) int {
 	for i := 0; i < len(haystack)-len(needle)+1; i++ {
 		sub := 0
 		for j := 0; j < len(needle); j++ {

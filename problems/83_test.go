@@ -16,7 +16,10 @@ func Test83(t *testing.T) {
 			result: &ListNode{Val: 1, Next: &ListNode{Val: 2}},
 		},
 		{
-			input1: &ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 3}}}}},
+			input1: &ListNode{
+				Val:  1,
+				Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 3}}}},
+			},
 			result: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3}}},
 		},
 	}

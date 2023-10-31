@@ -9,7 +9,13 @@ import (
 func Test21(t *testing.T) {
 	input1 := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4}}}
 	input2 := &ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}
-	returned := &ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 4}}}}}}
+	returned := &ListNode{
+		Val: 1,
+		Next: &ListNode{
+			Val:  1,
+			Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 4}}}},
+		},
+	}
 
 	tests := []struct {
 		input1   *ListNode
