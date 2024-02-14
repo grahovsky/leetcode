@@ -7,8 +7,8 @@ func TwoSum(nums []int, target int) []int {
 	return twoSum(nums, target)
 }
 
-func IsPalindrome(x int) bool {
-	return isPalindrome(x)
+func IsPalindromeNum(x int) bool {
+	return isPalindromeNum(x)
 }
 
 func RomanToInt(s string) int {
