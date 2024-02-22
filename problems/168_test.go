@@ -27,6 +27,10 @@ func Test168(t *testing.T) {
 			columnNumber: 52,
 			title:        "AZ",
 		},
+		{
+			columnNumber: 10000,
+			title:        "NTP",
+		},
 	}
 	for _, tc := range tests {
 		tc := tc

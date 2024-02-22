@@ -9,7 +9,7 @@ package problems
 // @lc code=start
 func convertToTitle(columnNumber int) string {
 	column := func(n int) string {
-		return string(byte(rune(n + 64)))
+		return string(rune(n + 64))
 	}
 
 	title := ""
