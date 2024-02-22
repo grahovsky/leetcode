@@ -14,3 +14,7 @@ func IsPalindromeNum(x int) bool {
 func RomanToInt(s string) int {
 	return romanToInt(s)
 }
+
+func MajorityElementOld(nums []int) int {
+	return majorityElementOld(nums)
+}

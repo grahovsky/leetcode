@@ -19,6 +19,10 @@ func Test169(t *testing.T) {
 			nums: []int{2, 2, 1, 1, 1, 2, 2},
 			res:  2,
 		},
+		{
+			nums: []int{3, 3, 3, 2, 2, 2, 1, 3, 1, 3, 3},
+			res:  3,
+		},
 	}
 	for _, tc := range tests {
 		tc := tc

@@ -9,12 +9,33 @@ import "runtime"
  */
 
 // @lc code=start
+
 func majorityElement(nums []int) int {
+	var ans int
+	var count int
+
+	for _, num := range nums {
+		if count == 0 {
+			ans = num
+		}
+		if num == ans {
+			count++
+		} else {
+			count--
+		}
+	}
+
+	return ans
+}
+
+// @lc code=end
+
+func majorityElementOld(nums []int) int {
 	runtime.GC()
 
 	m := make(map[int]int)
 	for _, n := range nums {
-		m[n] += 1
+		m[n]++
 		if m[n] > len(nums)/2 {
 			return n
 		}
@@ -22,5 +43,3 @@ func majorityElement(nums []int) int {
 
 	panic("should exist")
 }
-
-// @lc code=end
