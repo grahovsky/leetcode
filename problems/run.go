@@ -1,8 +1,5 @@
 package problems
 
-func Run() {
-}
-
 func TwoSum(nums []int, target int) []int {
 	return twoSum(nums, target)
 }
@@ -17,4 +14,8 @@ func RomanToInt(s string) int {
 
 func MajorityElementOld(nums []int) int {
 	return majorityElementOld(nums)
+}
+
+func IsHappy(num int) bool {
+	return isHappy(num)
 }

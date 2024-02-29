@@ -26,7 +26,7 @@ func Test191(t *testing.T) {
 	}
 	for _, tc := range tests {
 		tc := tc
-		t.Run("test 190", func(t *testing.T) {
+		t.Run("test 191", func(t *testing.T) {
 			require.Equal(t, tc.res, hammingWeight(tc.num))
 		})
 	}
