@@ -19,7 +19,7 @@ func Test225(t *testing.T) {
 		tc := tc
 		t.Run("test 225", func(t *testing.T) {
 			res := ""
-			stack := Constructor()
+			stack := StackConstructor()
 			stack.Push(1)
 			stack.Push(2)
 			stack.Push(3)

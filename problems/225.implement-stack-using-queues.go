@@ -11,7 +11,7 @@ type MyStack struct {
 	storage []int
 }
 
-func Constructor() MyStack {
+func StackConstructor() MyStack {
 	return MyStack{
 		storage: make([]int, 0),
 	}
