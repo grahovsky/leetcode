@@ -12,7 +12,7 @@ import (
  */
 
 // @lc code=start
-func isPalindrome(s string) bool {
+func isPalindromeString(s string) bool {
 	f := func(r rune) rune {
 		if !unicode.IsLetter(r) && !unicode.IsNumber(r) {
 			return -1

@@ -27,7 +27,7 @@ func Test125(t *testing.T) {
 	for _, tc := range tests {
 		tc := tc
 		t.Run("test 125", func(t *testing.T) {
-			require.Equal(t, tc.result, isPalindrome(tc.input))
+			require.Equal(t, tc.result, isPalindromeString(tc.input))
 		})
 	}
 }
