@@ -19,7 +19,7 @@ func Test232(t *testing.T) {
 		tc := tc
 		t.Run("test 232", func(t *testing.T) {
 			res := ""
-			q := Constructor()
+			q := ConstructorQ()
 			q.Push(1)
 			q.Push(2)
 			q.Push(3)

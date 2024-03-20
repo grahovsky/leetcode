@@ -32,7 +32,7 @@ type MyQueue struct {
 	reverse Stack
 }
 
-func Constructor() MyQueue {
+func ConstructorQ() MyQueue {
 	return MyQueue{
 		normal:  make([]int, 0),
 		reverse: make([]int, 0),
