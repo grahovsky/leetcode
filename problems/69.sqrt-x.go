@@ -8,13 +8,17 @@ package problems
 
 // @lc code=start
 func mySqrt(x int) int {
-	left, right := 0, x+1
+	if x == 1 {
+		return 1
+	}
 
-	for left < right {
+	left, right := 0, x/2
+
+	for left <= right {
 		mid := left + (right-left)/2
 
 		if mid*mid > x {
-			right = mid
+			right = mid - 1
 		} else {
 			left = mid + 1
 		}
